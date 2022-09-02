@@ -5,16 +5,7 @@ namespace PL.WebAPI.Controllers
 {
     public class BaseController : ControllerBase
     {
-        protected IMediator Mediator
-        {
-            get
-            {
-               if(_mediator == null)
-                    _mediator = HttpContext.RequestServices.GetService<IMediator>();
-
-               return _mediator;
-            }
-        }
+        protected IMediator? Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
         private IMediator? _mediator;
     }
 }

@@ -17,17 +17,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "nArchit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Security", "nArchitecture\Core.Security\Core.Security.csproj", "{0F0EA53A-D983-406B-8EC5-488C1AB71859}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Languages", "Languages", "{BE3A797A-B62A-4CA8-9A10-170E23D96F58}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectPL", "ProjectPL", "{BE3A797A-B62A-4CA8-9A10-170E23D96F58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.WebAPI", "Languages\PL.WebAPI\PL.WebAPI.csproj", "{8F7550BE-0A0C-42D3-B54C-E0527C5C0281}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.WebAPI", "ProjectPL\PL.WebAPI\PL.WebAPI.csproj", "{8F7550BE-0A0C-42D3-B54C-E0527C5C0281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.Application", "Languages\PL.Application\PL.Application.csproj", "{1D1A8A7B-36E2-46EC-A348-1EF272DD249D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.Application", "ProjectPL\PL.Application\PL.Application.csproj", "{1D1A8A7B-36E2-46EC-A348-1EF272DD249D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.Domain", "Languages\PL.Domain\PL.Domain.csproj", "{182B1F97-1369-4522-B3F9-7E6E9F5D0B19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.Domain", "ProjectPL\PL.Domain\PL.Domain.csproj", "{182B1F97-1369-4522-B3F9-7E6E9F5D0B19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.Infrastructure", "Languages\PL.Infrastructure\PL.Infrastructure.csproj", "{42FF91BA-0F36-4719-81CE-93A892F2EBDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.Infrastructure", "ProjectPL\PL.Infrastructure\PL.Infrastructure.csproj", "{42FF91BA-0F36-4719-81CE-93A892F2EBDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.Persistence", "Languages\PL.Persistence\PL.Persistence.csproj", "{73A7C6CF-8287-442D-B5ED-AEECC7DD64C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.Persistence", "ProjectPL\PL.Persistence\PL.Persistence.csproj", "{73A7C6CF-8287-442D-B5ED-AEECC7DD64C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

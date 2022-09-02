@@ -13,7 +13,7 @@ namespace PL.Persistence
                                                                 IConfiguration configuration)
         {
             services.AddDbContext<BaseDbContext>(o => o.UseSqlServer(configuration
-                                                            .GetConnectionString("ProgrammingLanguagesCS")));
+                                                            .GetConnectionString("KodlamaDevsCS")));
 
             services.AddScoped<IProgrammingLanguageRepository, ProgrammingLanguageRepository>();
 

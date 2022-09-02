@@ -18,6 +18,16 @@ public class EfRepositoryBase<TEntity, TContext> : IAsyncRepository<TEntity>, IR
         Context = context;
     }
 
+    public bool Any(Expression<Func<TEntity, bool>> predicate)
+    {
+        return Context.Set<TEntity>().Any(predicate);
+    }
+
+    public Task<bool> AnyAsync(Expression<Func<TEntity, bool>> predicate)
+    {
+        return Context.Set<TEntity>().AnyAsync(predicate);
+    }
+
     public async Task<TEntity?> GetAsync(Expression<Func<TEntity, bool>> predicate)
     {
         return await Context.Set<TEntity>().FirstOrDefaultAsync(predicate);

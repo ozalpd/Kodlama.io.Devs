@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PL.Application.Features.ProgrammingLanguages.Commands.CreateProgrammingLanguage;
 using PL.Application.Features.ProgrammingLanguages.Commands.Delete;
+using PL.Application.Features.ProgrammingLanguages.Queries.GetById;
 
 namespace PL.WebAPI.Controllers
 {
@@ -19,6 +20,13 @@ namespace PL.WebAPI.Controllers
         public async Task<IActionResult> Delete([FromRoute] DeleteLanguageCommand deleteCommand)
         {
             int result = await Mediator.Send(deleteCommand);
+            return Ok(result);
+        }
+
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetById([FromRoute] GetByIdLanguageQuery query)
+        {
+            var result = await Mediator.Send(query);
             return Ok(result);
         }
     }

@@ -1,6 +1,7 @@
 ﻿using Core.CrossCuttingConcerns.Exceptions;
 using PL.Application.Features.ProgrammingLanguages.Commands.CreateProgrammingLanguage;
 using PL.Application.Services.Repositories;
+using PL.Domain.Entities;
 
 namespace PL.Application.Features.ProgrammingLanguages.Rules
 {
@@ -29,6 +30,12 @@ namespace PL.Application.Features.ProgrammingLanguages.Rules
         {
             if (request.DisplayOrder == null)
                 request.DisplayOrder = 10000;
+        }
+
+        public void ShouldExist(ProgrammingLanguage? programmingLanguage)
+        {
+            if (programmingLanguage == null)
+                throw new BusinessException("ProgrammingLanguage does not exist!");
         }
     }
 }

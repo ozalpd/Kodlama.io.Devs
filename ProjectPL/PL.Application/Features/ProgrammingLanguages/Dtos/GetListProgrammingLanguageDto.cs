@@ -1,9 +1,6 @@
 ﻿namespace PL.Application.Features.ProgrammingLanguages.Dtos
 {
-    /// <summary>
-    /// Response model of CreateLanguageCommand
-    /// </summary>
-    public class CreatedProgrammingLanguageDto
+    public class GetListProgrammingLanguageDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

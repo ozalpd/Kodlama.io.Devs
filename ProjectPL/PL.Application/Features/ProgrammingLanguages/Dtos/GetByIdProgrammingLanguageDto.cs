@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PL.Application.Features.ProgrammingLanguages.Dtos
+﻿namespace PL.Application.Features.ProgrammingLanguages.Dtos
 {
     /// <summary>
-    /// Response model of GetByIdLanguageCommand
+    /// Response model of GetByIdLanguageQuery
     /// </summary>
     public class GetByIdProgrammingLanguageDto
     {

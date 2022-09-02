@@ -221,13 +221,9 @@ ModelManifest.xml
 
 #SampleData Files
 [Ss]ample[Dd]ata/
-PerdeTasarla/LMT.Web/APK/
-PerdeTasarla/LMT.Web/Docs/
-PerdeTasarla/LMT.Web/ProductChartImages/
-PerdeTasarla/LMT.Web/ProjectFiles/
-PerdeTasarla/LMT.Web/product-images/
-PerdeTasarla/LMT.Web/Videos/
-PerdeTasarla/LMT.Web/Bayi/
+APK/
+Docs/
+Videos/
 
 #Archive Files
 *.rar

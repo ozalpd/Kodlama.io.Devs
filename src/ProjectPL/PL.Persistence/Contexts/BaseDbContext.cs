@@ -16,6 +16,9 @@ namespace PL.Persistence.Contexts
 
         public DbSet<ProgrammingLanguage> ProgrammingLanguages { get; set; }
 
+        public DbSet<ProgrammingTechnology> ProgrammingTechnologies { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -26,6 +29,7 @@ namespace PL.Persistence.Contexts
 
             //I think it's a good idea to keep table names together. Ozalp 2022-09-02
             modelBuilder.Entity<ProgrammingLanguage>().ToTable("ProgrammingLanguages");
+            modelBuilder.Entity<ProgrammingTechnology>().ToTable("ProgrammingTechnologies");
 
 
             DataSample.Seed(modelBuilder);

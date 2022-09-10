@@ -17,6 +17,8 @@ namespace PL.Persistence
 
             services.AddScoped<IProgrammingLanguageRepository, ProgrammingLanguageRepository>();
 
+            services.AddScoped<IProgrammingTechnologyRepository, ProgrammingTechnologyRepository>();
+
             return services;
         }
     }
